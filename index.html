@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ADDING LIGHTBOX FILES: -->
+    <!-- Lightbox files are downloaded and added to the project fodler and now including in this file: -->
+
+    <!-- lightbox css -->
+    <link href="LightboxJQuery/css/lightbox.css" rel="stylesheet" />
+
+    <!-- lightbox js -->
+    <script src="/LightboxJQuery/js/lightbox.js"></script>
+    <script src="/LightboxJQuery/js/lightbox-plus-jquery.js"></script>
+
+
+    <!-- bootstrap cdn link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>Lightbox</title>
+</head>
+
+<body>
+
+    <div class="heading">
+        LIGHTBOX GALLERY
+    </div>
+
+    <!-- adding img tag inside "a" tag, so that when we click on image, it opens the original image. -->
+
+    <!-- to activate the lightbox from the files that was linked to this file, we need to write 'data-lightbox = "ANY_NAME"' inside the "a" tag. -->
+
+    <!-- NOTE: All the data-lightbox in every "a" tag, should have the same name. See all the "a" tags below to understand.-->
+
+    <div class="gallery">
+        <a href="1.jpg" class="img_wrapper" data-lightbox="img1">
+            <img src="1.jpg" alt="">
+        </a>
+        <a href="2.jpg" class="img_wrapper" data-lightbox="img1">
+            <img src="2.jpg" alt="">
+        </a>
+        <a href="3.jpg" class="img_wrapper" data-lightbox="img1">
+            <img src="3.jpg" alt="">
+        </a>
+        <a href="4.jpg" class="img_wrapper" data-lightbox="img1">
+            <img src="4.jpg" alt="">
+        </a>
+        <a href="5.jpg" class="img_wrapper" data-lightbox="img1">
+            <img src="5.jpg" alt="">
+        </a>
+        <a href="6.jpg" class="img_wrapper" data-lightbox="img1">
+            <img src="6.jpg" alt="">
+        </a>
+        <a href="7.jpg" class="img_wrapper" data-lightbox="img1">
+            <img src="7.jpg" alt="">
+        </a>
+        <a href="8.jpg" class="img_wrapper" data-lightbox="img1">
+            <img src="8.jpg" alt="">
+        </a>
+        <a href="9.jpg" class="img_wrapper" data-lightbox="img1">
+            <img src="9.jpg" alt="">
+        </a>
+
+    </div>
+</body>
+
+</html>

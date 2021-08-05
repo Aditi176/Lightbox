@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 15px;
+}
+
+/* To place the images in grid form, or to make them responsive, we need to apply the styles on the outer container of the images, i.e; "gallery"  class. */
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* We need to apply the overflow: hidden in the "a" tag, so that when mouse is hovered over image, it does not zooms beyond the borders. */
+
+/* Also, since "a" tag is the outer tag of img tag, we will set the height and width of "a" tag acc to our choice, and make height and width of img tag as 100%, so that the img tag adjusts itself to the height and width of the parent tag ("a" tag). */
+
+.gallery a {
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px black;
+}
+
+/* Making height and width of img tag as 100% */
+
+.gallery a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+img:hover {
+  transition: all 1s;
+  transform: scale(1.2);
+}
